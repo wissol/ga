@@ -1,0 +1,64 @@
+\documentclass[12pt,spanish,a4paper,DIV=7,twoside=false]{scrbook}
+% fuente base 12, en Español, din A4, la medida del área de texto que prefiero, a una sola cara,
+
+% ------ Línea de 80 caracteres -----------------------------------------------
+
+
+% ------ de borrador ------------
+
+\usepackage{todonotes} % .--- lista de tareas
+\usepackage{lipsum}    %  --- genera lorem ipsum \ipsum[3] 3 párrafos
+
+
+% ------ ilustraciones --------------
+
+\usepackage{graphicx}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+
+% ------ tipografía ---------------------
+
+\usepackage{Alegreya} 			% --- U otra fuente que se desee
+\addtokomafont{disposition}{\rmfamily} 	% --- Encabezados en Serif
+
+\setkomafont{caption}{\footnotesize\itshape} 		% --- Etiquetas fuente pequeña
+\setkomafont{captionlabel}{\usekomafont{caption}}	% --- Idém
+
+\usepackage{microtype}  % --- Arreglos Tipográficos
+
+\usepackage[autostyle,spanish=spanish]{csquotes} % --- mejora de citas
+
+\usepackage{verse} % --- poemas
+
+%\usepackage[toc]{multitoc} % --- índice general en 2 columnas, por si se hace necesario
+
+
+% ------ cuadros ---------------------
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+
+
+% ------ idioma -----------------------
+
+\usepackage[spanish,es-noindentfirst]{babel}	% --- en Español, por favor
+						% --- primer párrafo de cada sección sin sangría
+						
+\usepackage[utf8]{inputenc} % --- codificación de caracteres (entrada)
+\usepackage[T1]{fontenc}    % --- codificación de salida
+
+
+% ------- referencias -----------------
+
+\usepackage[nottoc]{tocbibind}
+\usepackage{cleveref} 		% ---  Documentación http://tug.ctan.org/macros/latex2e/contrib/cleveref/cleveref.pdf
+
+
+% ------- enlaces ----------------------
+
+\usepackage[	 colorlinks=true, pdfstartview=FitV, linkcolor=blue, 
+                 	citecolor=blue, urlcolor=blue, pdfborder={0 0 0}, 
+			   	pdftitle={Sabia Vida}, pdfsubject=reflexiones,
+				pdfkeywords={minimalismo,sabiduría},
+				pdfauthor={Miguel de Luis}, pdflang={es ES}]{hyperref} %enlaces debe ir al final
