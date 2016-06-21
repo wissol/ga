@@ -9,6 +9,11 @@
 \usepackage{todonotes} % .--- lista de tareas
 \usepackage{lipsum}    %  --- genera lorem ipsum \ipsum[3] 3 párrafos
 
+% ------ índices --------------------
+
+\setcounter{tocdepth}{1}
+
+%\usepackage[toc]{multitoc} % --- índice general en 2 columnas, por si se hace necesario
 
 % ------ ilustraciones --------------
 
@@ -20,7 +25,8 @@
 
 \usepackage{Alegreya} 			% --- U otra fuente que se desee
 \addtokomafont{disposition}{\rmfamily} 	% --- Encabezados en Serif
-
+\addtokomafont{labelinglabel}{\rmfamily} % --- Etiquetas en Serif
+\addtokomafont{descriptionlabel}{\rmfamily}
 \setkomafont{caption}{\footnotesize\itshape} 		% --- Etiquetas fuente pequeña
 \setkomafont{captionlabel}{\usekomafont{caption}}	% --- Idém
 
@@ -30,7 +36,7 @@
 
 \usepackage{verse} % --- poemas
 
-%\usepackage[toc]{multitoc} % --- índice general en 2 columnas, por si se hace necesario
+
 
 
 % ------ cuadros ---------------------
