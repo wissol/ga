@@ -2,332 +2,45 @@
 
 \section{Pruebas}
 
-Una prueba\index{prueba} permite determinar si un personaje ha tenido éxito o ha fracasado en su intento de realizar una acción.
+Una prueba\index{prueba} permite determinar si un personaje ha tenido éxito o ha fracasado en su intento de realizar una acción. La siguiente lista resume cómo resolvemos una prueba de una manera formal, seguramente mucho más de la que luego váis a aplicar en la práctica.
 
 \begin{enumerate}
 \item El jugador explica al máster la acción que su personaje está intentando.
 \item El máster determina las posibles consecuencias de la acción y, si es necesario, se las explica al jugador. Por ejemplo, si un \textsc{pj} intenta disparar a una rata con un tirachinas las consecuencias podrían ser un fallo o un acierto, con el consiguiente herida para la rata.
+\item El jugador confirma que quiere intentar la acción
+\item El máster decide si es necesario lanzar los dados o, si, por obvio, cuál es el resultado de la acción.
 \item El máster determina luego qué atributo es el más apropiado para la acción.
-\item Número objetivo\index{número objetivo}
-\item ¿Subir y bajar?
+\item Al mismo tiempo decide cuál es el \textsc{Número Objetivo}\index{número objetivo}.
+\item Sabiendo todo esto, el jugador lanza los dados. Si el total es menor que el número objetivo habrá fracasado y tendrá que afrontar las consecuencias de la acción. En caso contrario habrá tenido éxito.
+%\item ¿Subir y bajar?
 \end{enumerate}
 
+\subsection{El número objetivo}
+El máster es el único que puede determinar cuál es el número objetivo --Desde ahora, representado por el signo \#, seguido del número-- \index{número objetivo} para cada acción. Se guía para ello de la dificultad aparente de la acción. Por ejemplo un caso normal sería \#10, --es decir un número objetivo de 10--.
 
-% \subsection{Choosing the skill and the dice}
+\begin{table}[h]
+\centering
+\begin{tabular}{ccccc}
+\toprule
+Dificultad&Trivial&Fácil&Normal&Difícil\\\midrule
+Número Objetivo&\#7 ó menos&\#8 ó \#9&\#10 a \#11&\#12 ó más\\\midrule
+\bottomrule
+\end{tabular}
+\caption{Número objetivo}\index{número objetivo}
+\end{table}
 
-% Basic checks%
-% \footnote{Also known as skill tests.%
-% } allow us to know whether a character has been successful when attempting
-% an action. It is one of the most used rules in every game session,
-% so pay attention.
-% \begin{enumerate}
-% \item Make sure you know what \emph{action} the player character is attempting
-% and what the \emph{consequences} of that action could be. For example:
-% if a player shoots a rat with his slingshot, the action would be shooting
-% and the possible consequences are either a hit or a miss -- and the
-% effects of that hit. The game master might want to ask the player
-% to make sure he understands what he's trying to do.
-% \item The game master is the only one who can determine the consequences
-% of any attempted action. 
-% \item The game master then determines which \emph{skill} is more appropriate
-% for the \emph{action} being attempted%
-% \footnote{Shooting is appropriate when the action is shooting a rat with your
-% slingshot. Academics is appropriate for reading.%
-% }. 
-% \item \emph{If there's no appropriate skill}, the game master should choose
-% an \emph{attribute} instead%
-% \footnote{Suppose a newsboy finds one of the first photographic inventions and
-% wants to take a picture of his friends. There is no skill for photography
-% so the game master might decide that you use your Education attribute
-% for this action.%
-% }. Again, the game master's decision is final.
-% \item Use the dice of the attribute linked to the skill, \emph{upgrading}
-% or\emph{ downgrading} them:
+\minisec{Cuando \emph{no} usamos los dados}
 
-% \begin{itemize}
-% \item If the character is \emph{good at} the appropriate skill, upgrade
-% the dice of the linked attribute. Weak dice become normal dice (OK
-% dice), while normal dice become swell dice. 
-% \item If the character is \emph{bad at} the appropriate skill, downgrade
-% the dice of the linked attribute. Weak dice become fool dice and normal
-% dice become weak dice. 
-% \item If the character is \emph{OK at} the appropriate skill, use the dice
-% of the linked attribute without any modifications.
-% \end{itemize}
-% \end{enumerate}
-% \begin{description}
-% \item [{Example:}] \emph{Allan is }good at\emph{ Sweet Talk, a skill linked
-% to the Charisma attribute. He has four weak dice in his Charisma attribute.
-% When he tries any Sweet Talk action, such as asking a bootblack girl
-% for a date, he upgrades those four weak dice to four normal dice.}
-% \end{description}
+\begin{description}
+\item[Acciones Imposibles] La acción es prácticamente imposible para cualquiera, como intentar volar agitando los brazos. En ese caso la acción fracasa, sin importar lo que saques en los dados ni los puntos de pillerías\index{pillerías} que gastes.
+\item[Acciones Triviales] En general las acciones tan fáciles tienen siempre éxito y solo deberían tirarse si el personaje está bajo mucha presión, --como en medio de una batalla. No hace falta tirar por Agilidad cada vez que un personaje intenta montar en bicicleta o correr por el parque.
+\end{description}
 
-% \subsection{The target number}
+\subsection{Pifiarla}
 
-% The game master then determines a target number (TN). If the player
-% rolls equal or higher than the target number, he succeeds. If he rolls
-% less than the target number, he fails. A task of average difficulty
-% will demand a TN of 10, a very easy task could use a TN of 4, while
-% a difficult task can only be achieved with a TN of 14 or more. (Refer
-% to 3.2.2.1 Target Number Table.)
-% \begin{description}
-% \item [{Example:}] Suppose Rick is shooting a can with a slingshot. Since
-% Shooting is the appropriate skill for this, the game master chooses
-% it to carry out the action. Shooting is linked to Eyes \& Ears. Rick's
-% character sheet shows that he has three weak dice in Eyes \& Ears;
-% not so good. Yet, Rick is also \emph{good at} Shooting, so he upgrades
-% those three weak dice to normal dice. The game master announces that
-% hitting the can will require a TN of 11 because it's quite far away.
-% Rick rolls his three normal dice and gets a 13, hitting the can right
-% in the middle with a satisfying noise, watching as it falls and rolls
-% along the pavement. Had Rick been \emph{bad at} Shooting, he would
-% have had a problem because he would have downgraded his weak dice
-% to fool dice. It's hard to roll an 11 with three fool dice unless
-% you use some chits%
-% \footnote{Chits are discussed in Chapter \vref{cha:Chits} %
-% }. If Rick had been neither \emph{good at} or \emph{bad at} Shooting,
-% he would have used the three weak dice of his Agility score and had
-% some chance of hitting the can.
-% \end{description}
+Pifias\index{pifia} cuando sacas un 1 en cada uno de los dados que has lanzando o si tu total es siete puntos menor que el número objetivo.
 
-% \subsubsection*{When to not roll dice}
-
-% If the game master is sure you will succeed (or fail), you don't have
-% to roll any dice. To speed up the game, the game master may decide
-% that a player character (not a non-player character) automatically
-% succeeds at an easy task. Reserve rolling dice for the important stuff
-% only. This is how it goes:
-% \begin{description}
-% \item [{Impossible~Tasks:}] The attempt is genuinely impossible, such
-% as flapping your arms to fly. The attempt fails automatically, whether
-% the dice is rolled or the chits are spent.
-% \item [{Trivial~Tasks:}] These are so easy, you are guaranteed to succeed.
-% The game master does not need to require a die roll, except if the
-% task is attempted under stress such as during a fight or in an emergency.
-% \item [{Very~Easy~Tasks:}] The game master may decide that the player
-% character succeeds automatically, except if the task is attempted
-% under stress such as during a fight or in an emergency.
-% \end{description}
-
-% \subsubsection{Target Number Table}
-
-% This table is a guideline for the game master when he has to determine
-% a target number. You can use a TN of 5 or 7 if you think that would
-% be the most appropriate for any given situation%
-% \footnote{Note that average (normal) difficulty means average for an adult without
-% special training. Dressing a wound would be of average difficulty
-% using the Healing skill. In any case, these guidelines are not the
-% Bible. The game master can change this table or disregard it altogether.%
-% }. 
-
-% \begin{longtable}{cc}
-% \hline
-% \toprule 
-% Difficulty & Suggested Target Number\tabularnewline
-% \midrule
-% \hline
-% \endhead
-% \midrule 
-% Trivial & 4\tabularnewline
-% \midrule 
-% Very easy & 6\tabularnewline
-% \midrule 
-% Easy & 8\tabularnewline
-% \midrule 
-% Average & 10\tabularnewline
-% \midrule 
-% Hard & 12\tabularnewline
-% \midrule 
-% Very hard & 14\tabularnewline
-% \midrule 
-% Experts only & 15 or more\tabularnewline
-% \bottomrule
-% \end{longtable}
-
-\section{Pruebas avanzadas}
-
-\section{Prueba del Destino}
-% \section{This is how you play this game}
-
-% \noindent \begin{wrapfigure}{o}{0.5\columnwidth}%
-% \includegraphics[clip,width=0.4\textwidth]{NBFinalIllust/singer}
-
-% \caption{Street Singer}
-
-
-% \end{wrapfigure}%
-% \lettrine{S}{}ome friends are sitting at a table; one of them is
-% the game master, the rest are the players, each one playing the role
-% of a player character. The game master describes the scene:
-
-% \emph{``You enter the alley with soft feet and wild hearts, trembling
-% at what could be waiting for you among the shadows. The air is filled
-% with the stench of the putrid fruit piled against a corner. What could
-% be hiding behind it? Ghosts are supposed to exist only in fairy tales,
-% but right now you aren't so sure. Was that a step you heard? Tell
-% me, what are you going to do?\textquotedbl{}}
-
-% \emph{Rick, one of the player characters, decides to take the lead.
-% ``I am going to shoot at the fruit pile with my slingshot and if
-% anything moves, I say we run away like crazy.\textquotedbl{}}
-
-% \emph{If the game master is sure about the success of an action he
-% grants a success and that's that; no dice required. If on the other
-% hand, the action is believed impossible, the game master forbids it. }
-
-% \emph{In this case the game master is sure that Rick can't miss hitting
-% the fruit pile. He answers ``OK, Rick\textquotedbl{}. You point and
-% shoot and the stone hits the rotting fruit pile. After a split second,
-% you all see a ferocious, rabid cat emerging from the fruit pile, foam
-% coming out of its mouth. Now tell me, what are you going to do?\textquotedbl{}}
-
-% \emph{The group's answer is unanimous: ``Run for it!\textquotedbl{}
-% Perhaps the game master is exaggerating a bit on his description of
-% the cat, but they aren't taking any chances with a rabid feline.}
-
-% Now the game master has a small problem; will the players be able
-% to outrun the cat through the maze of trash-ridden alleys? That's
-% why we have rules. They help you to decide who can do what and what
-% the results of those actions could be, striving to be fair, fast and
-% fun.
-
-
-% \section{Basic checks}
-
-
-% \subsection{Choosing the skill and the dice}
-
-% Basic checks%
-% \footnote{Also known as skill tests.%
-% } allow us to know whether a character has been successful when attempting
-% an action. It is one of the most used rules in every game session,
-% so pay attention.
-% \begin{enumerate}
-% \item Make sure you know what \emph{action} the player character is attempting
-% and what the \emph{consequences} of that action could be. For example:
-% if a player shoots a rat with his slingshot, the action would be shooting
-% and the possible consequences are either a hit or a miss -- and the
-% effects of that hit. The game master might want to ask the player
-% to make sure he understands what he's trying to do.
-% \item The game master is the only one who can determine the consequences
-% of any attempted action. 
-% \item The game master then determines which \emph{skill} is more appropriate
-% for the \emph{action} being attempted%
-% \footnote{Shooting is appropriate when the action is shooting a rat with your
-% slingshot. Academics is appropriate for reading.%
-% }. 
-% \item \emph{If there's no appropriate skill}, the game master should choose
-% an \emph{attribute} instead%
-% \footnote{Suppose a newsboy finds one of the first photographic inventions and
-% wants to take a picture of his friends. There is no skill for photography
-% so the game master might decide that you use your Education attribute
-% for this action.%
-% }. Again, the game master's decision is final.
-% \item Use the dice of the attribute linked to the skill, \emph{upgrading}
-% or\emph{ downgrading} them:
-
-% \begin{itemize}
-% \item If the character is \emph{good at} the appropriate skill, upgrade
-% the dice of the linked attribute. Weak dice become normal dice (OK
-% dice), while normal dice become swell dice. 
-% \item If the character is \emph{bad at} the appropriate skill, downgrade
-% the dice of the linked attribute. Weak dice become fool dice and normal
-% dice become weak dice. 
-% \item If the character is \emph{OK at} the appropriate skill, use the dice
-% of the linked attribute without any modifications.
-% \end{itemize}
-% \end{enumerate}
-% \begin{description}
-% \item [{Example:}] \emph{Allan is }good at\emph{ Sweet Talk, a skill linked
-% to the Charisma attribute. He has four weak dice in his Charisma attribute.
-% When he tries any Sweet Talk action, such as asking a bootblack girl
-% for a date, he upgrades those four weak dice to four normal dice.}
-% \end{description}
-
-% \subsection{The target number}
-
-% The game master then determines a target number (TN). If the player
-% rolls equal or higher than the target number, he succeeds. If he rolls
-% less than the target number, he fails. A task of average difficulty
-% will demand a TN of 10, a very easy task could use a TN of 4, while
-% a difficult task can only be achieved with a TN of 14 or more. (Refer
-% to 3.2.2.1 Target Number Table.)
-% \begin{description}
-% \item [{Example:}] Suppose Rick is shooting a can with a slingshot. Since
-% Shooting is the appropriate skill for this, the game master chooses
-% it to carry out the action. Shooting is linked to Eyes \& Ears. Rick's
-% character sheet shows that he has three weak dice in Eyes \& Ears;
-% not so good. Yet, Rick is also \emph{good at} Shooting, so he upgrades
-% those three weak dice to normal dice. The game master announces that
-% hitting the can will require a TN of 11 because it's quite far away.
-% Rick rolls his three normal dice and gets a 13, hitting the can right
-% in the middle with a satisfying noise, watching as it falls and rolls
-% along the pavement. Had Rick been \emph{bad at} Shooting, he would
-% have had a problem because he would have downgraded his weak dice
-% to fool dice. It's hard to roll an 11 with three fool dice unless
-% you use some chits%
-% \footnote{Chits are discussed in Chapter \vref{cha:Chits} %
-% }. If Rick had been neither \emph{good at} or \emph{bad at} Shooting,
-% he would have used the three weak dice of his Agility score and had
-% some chance of hitting the can.
-% \end{description}
-
-% \subsubsection*{When to not roll dice}
-
-% If the game master is sure you will succeed (or fail), you don't have
-% to roll any dice. To speed up the game, the game master may decide
-% that a player character (not a non-player character) automatically
-% succeeds at an easy task. Reserve rolling dice for the important stuff
-% only. This is how it goes:
-% \begin{description}
-% \item [{Impossible~Tasks:}] The attempt is genuinely impossible, such
-% as flapping your arms to fly. The attempt fails automatically, whether
-% the dice is rolled or the chits are spent.
-% \item [{Trivial~Tasks:}] These are so easy, you are guaranteed to succeed.
-% The game master does not need to require a die roll, except if the
-% task is attempted under stress such as during a fight or in an emergency.
-% \item [{Very~Easy~Tasks:}] The game master may decide that the player
-% character succeeds automatically, except if the task is attempted
-% under stress such as during a fight or in an emergency.
-% \end{description}
-
-% \subsubsection{Target Number Table}
-
-% This table is a guideline for the game master when he has to determine
-% a target number. You can use a TN of 5 or 7 if you think that would
-% be the most appropriate for any given situation%
-% \footnote{Note that average (normal) difficulty means average for an adult without
-% special training. Dressing a wound would be of average difficulty
-% using the Healing skill. In any case, these guidelines are not the
-% Bible. The game master can change this table or disregard it altogether.%
-% }. 
-
-% \begin{longtable}{cc}
-% \hline
-% \toprule 
-% Difficulty & Suggested Target Number\tabularnewline
-% \midrule
-% \hline
-% \endhead
-% \midrule 
-% Trivial & 4\tabularnewline
-% \midrule 
-% Very easy & 6\tabularnewline
-% \midrule 
-% Easy & 8\tabularnewline
-% \midrule 
-% Average & 10\tabularnewline
-% \midrule 
-% Hard & 12\tabularnewline
-% \midrule 
-% Very hard & 14\tabularnewline
-% \midrule 
-% Experts only & 15 or more\tabularnewline
-% \bottomrule
-% \end{longtable}
-
-
-
+Las consecuencias de las pifias quedan a decisión del máster, pero dependen de las circustancias. En un examen podrías responder un disparate a una pregunta, corriendo podrías caerte, desactivando una bomba las consecuencias podrían ser trágicas.∂
 
 % \subsection{The fumble }
 
@@ -380,6 +93,54 @@ Una prueba\index{prueba} permite determinar si un personaje ha tenido éxito o h
 % papers), you don't only know about George Washington, but you can
 % tell your teacher the size of his shoes. In an emergency, a spectacular
 % success could save the day.
+
+\section{Pruebas avanzadas}
+
+\section{Prueba del Destino}
+
+
+
+% \end{wrapfigure}%
+% \lettrine{S}{}ome friends are sitting at a table; one of them is
+% the game master, the rest are the players, each one playing the role
+% of a player character. The game master describes the scene:
+
+% \emph{``You enter the alley with soft feet and wild hearts, trembling
+% at what could be waiting for you among the shadows. The air is filled
+% with the stench of the putrid fruit piled against a corner. What could
+% be hiding behind it? Ghosts are supposed to exist only in fairy tales,
+% but right now you aren't so sure. Was that a step you heard? Tell
+% me, what are you going to do?\textquotedbl{}}
+
+% \emph{Rick, one of the player characters, decides to take the lead.
+% ``I am going to shoot at the fruit pile with my slingshot and if
+% anything moves, I say we run away like crazy.\textquotedbl{}}
+
+% \emph{If the game master is sure about the success of an action he
+% grants a success and that's that; no dice required. If on the other
+% hand, the action is believed impossible, the game master forbids it. }
+
+% \emph{In this case the game master is sure that Rick can't miss hitting
+% the fruit pile. He answers ``OK, Rick\textquotedbl{}. You point and
+% shoot and the stone hits the rotting fruit pile. After a split second,
+% you all see a ferocious, rabid cat emerging from the fruit pile, foam
+% coming out of its mouth. Now tell me, what are you going to do?\textquotedbl{}}
+
+% \emph{The group's answer is unanimous: ``Run for it!\textquotedbl{}
+% Perhaps the game master is exaggerating a bit on his description of
+% the cat, but they aren't taking any chances with a rabid feline.}
+
+% Now the game master has a small problem; will the players be able
+% to outrun the cat through the maze of trash-ridden alleys? That's
+% why we have rules. They help you to decide who can do what and what
+% the results of those actions could be, striving to be fair, fast and
+% fun.
+
+
+
+
+
+
 
 
 % \subsubsection*{In short}
