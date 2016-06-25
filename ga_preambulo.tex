@@ -1,6 +1,6 @@
 \documentclass[12pt,spanish,a4paper,DIV=7,twoside=false]{scrbook}
 % fuente base 12, en Español, din A4, la medida del área de texto que prefiero, a una sola cara,
-
+%\documentclass[10pt,spanish,a5paper,twoside=true]{scrbook} %impresión en a5
 % ------ Línea de 80 caracteres -----------------------------------------------
 
 
@@ -25,8 +25,10 @@
 
 
 % ------ tipografía ---------------------
-
+\usepackage[T1]{fontenc}
 \usepackage{Alegreya} 			% --- U otra fuente que se desee
+\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
+
 \addtokomafont{disposition}{\rmfamily} 	% --- Encabezados en Serif
 \addtokomafont{labelinglabel}{\rmfamily} % --- Etiquetas en Serif
 \addtokomafont{descriptionlabel}{\rmfamily\bfseries}
