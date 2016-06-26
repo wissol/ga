@@ -6,11 +6,27 @@ la violencia si es conveniente a sus fines. Además, las consecuencias
 pueden ser definitivas para los personajes y la aventura, por lo que
 tenemos que dedicarle cierta atención.
 
+\section{Orden en las acciones}
+
+En el combate primero mueven por el siguiente orden.
+
+\begin{enumerate}
+\item Personajes Jugadores
+\item Personajes no Jugadores Hostiles
+\item Personajes no Jugadores Neutrales
+\item Personajes no Jugadores Aliados
+\end{enumerate}
+
+Los personajes no jugadores se consideran hostiles, neutrales o aliados conforme 
+a cómo se hayan comportado hasta ahora. Si un pnj aliado decide traicionar a los pj's
+deberán mover en el orden de los pnj aliado hasta el mismo turno en que se revele 
+hostil; --apuñalando por la espalda, por ejemplo\footnote{Esta circunstancia debería ser
+rara, de lo contrario los jugadores acabarán desconfiando del máster}.
+
 \section{Secuencia}
 
 \begin{enumerate}
 \item Sorpresa (Si es necesario)
-\item Iniciativa
 \item Disparo
 \item Movimiento
 \item Compate
@@ -34,21 +50,11 @@ podrán actuar normalmente sin que se vuelvan a usar las reglas de sorpresa. (Ex
 en el extraño caso que alguien se incorpore sigilosamente al combate cierto tiempo
 después.)
 
-% \section{Initiative }
-% \begin{enumerate}
-% \item Every character rolls for Athletics.%
-% \footnote{If using a bicycle or vehicle use the appropriate skill to ride them.%
-% }
-% \item Characters act in sequence according to their totals.
-% \item In the event of a tie:
+\section{Disparos}
 
-% \begin{itemize}
-% \item Player characters act first, if still tied.
-% \item Younger characters act first, if still tied.
-% \item The character with the most chits acts first, if still tied.
-% \item Roll again until you break the tie.
-% \end{itemize}
-% \end{enumerate}
+Los personajes mueven por el siguiente orden de prioridad.
+
+
 
 % \section{Shooting, throwing and ranged attacks }
 % \begin{enumerate}
@@ -312,20 +318,28 @@ después.)
 % \end{description}
 % \end{description}
 
+\begin{table}[ht]
+\begin{tabular}{cccc}
+\toprule
+Arma&Tipo&Daño&Alcance\\\midrule\midrule
+Palo o Bastón&No letal&FUE&-\\\midrule
+Piedra o Ladrillo&No letal&FUE -1&Corto\\\midrule
+Cuchillo&Letal&FUE&-\\\midrule
+Cuchillo (Lanzado)&Letal&FUE - 1&Corto\\\midrule
+Espada&Extremo&FUE&-\\\midrule
+\bottomrule
+\end{tabular}
+\caption{Armas}
+\end{table}
+
 % \subsubsection{\hfill{}Weapons (and other sources of damage)\hfill{} \label{sub:Weapons Table}}
 
-% \begin{center}
-% \begin{longtable}{cccc}
-% \toprule 
-% Weapon  & Type & Damage & Range\tabularnewline
-% \midrule
-% \endhead
-% \midrule 
+
 % Animal & Non-lethal & STR & -\tabularnewline
 % \midrule 
 % Animal (dangerous) & Lethal & STR & -\tabularnewline
 % \midrule 
-% Cane or stick & Non-lethal & STR +1 & -\tabularnewline
+
 % \midrule 
 % Giant mosquito bite & Non-lethal & 9 & -\tabularnewline
 % \midrule 
