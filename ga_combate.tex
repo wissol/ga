@@ -213,19 +213,100 @@ Los personajes mueven por el siguiente orden de prioridad.
 % \end{tabular}
 % \par\end{center}
 
+\section{Daño \label{sec:Daño}}
 
-% \section{Damage \label{sec:Damage}}
+Si golpean a tu personaje lo más probable es que sufra alguna clase
+de daño o incluso la muerte. El combate en este juego es \emph{muy peligroso},
+--mucho más que en otros juegos de rol--, así que no debería suceder a menudo
+y si pasa y no puedes evitarlo, ten cuidado, mucho cuidado.
 
-% When your character gets hit, he will more than likely suffer some
-% damage and in some cases death (unless you use one of your handy chits).
-% Combat in this game ­as in real life, ­canbe quite deadly. Fortunately,
-% most often you will not be using real weapons. Honest traders do not
-% sell real weapons of any kind to children, and weapon possession ­while
-% lawful, ­is not common in New Paris City. Rarely, in most campaigns,
-% will you ever see a gun used in anger. If you do you'd better run
-% because those things kill fast. 
+\subsection{La tirada de daño}
+
+La idea básica es que haces una tirada de salud contra un \# que depende del
+arma empleada, si aciertas sufrirás menos daño que si fallas; los detalles 
+dependen tambien de la clase de daño del arma.
+
+\minisec{Armas de Tipo E o "Juguetes"}
+
+No son verdaderas armas sino elementos que podrían usarse en una bronca más o menos
+amistosa, sobre todo entre niños. Nunca usarías un arma de esta clase en un combate
+serio. Estamos hablando de tirachinas y tartas de crema.
+
+\begin{description}
+
+\item[Éxito:] Si pasas la tirada tu personaje no sufre ninguna consecuencia negativa.
+
+\item[Fallo:] Si fallas, tu personaje sufre un \emph{punto de golpe verde, pg verde, o simplemente verde}. 
+Cada \emph{pg verde} supone una penalización de -1 a las tiradas de todas tus acciones. Esta penalización
+se acumular al recibir más golpes, pero desaparece tan pronto termine la riña o degenere en un combate verdadero,
+como cuando empezáis una \emph{batalla} de tartas de crema y alguien saca un revólver. 
+
+\end{description}
+
+\minisec{Armas de Tipo D o "No letales"}
+
+En esta clase de armas son las que, normalmente, no matarían a un adulto en una novela
+o una película pero que pueden romper algún hueso o herir. Estamos hablando de bastones, 
+piedras, botellas y cosas de ese estilo. 
+
+\begin{description}
+
+\item[Éxito:] Si pasas la tirada tu personaje no sufre ninguna consecuencia negativa.
+
+\item[Fallo:] Si fallas, tu personaje sufre un \emph{punto de golpe rojo, pg rojo, o simplemente rojo}. 
+Cada \emph{pg rojo} supone una penalización de -1 a las tiradas de todas tus acciones. Esta penalización
+se acumular al recibir más golpes. A diferencia de los verdes, los rojos no desaparecen cuando termina 
+el combate.
+
+\end{description}
+
+\minisec{Armas de tipo C o "letales"}
+
+En esta clase de armas son las que podrían llegar a matar a un adulto en una novela
+o una película pero que pueden romper algún hueso o herir. Estamos hablando de cuchillos, los dientes
+de un perro y armas de calibre muy pequeño.
+
+\begin{description}
+
+\item[Éxito:] Tu personaje aguanta bien la herida y sólo sufre 1 \emph{pg}
+
+\item[Fallo:] Tu personaje recibe una herida importante, moviéndose 1 nivel en la escala de daño.
+
+\end{description}
+
+\minisec{Armas de tipo B o "militares"}
+
+Estas armas normalmente matarían a un adulto, tanto en la ficción como en la vida real. Aquí se incluyen
+la mayoría de las armas de fuego, las espadas y las lanzas.
+
+\begin{description}
+
+\item[Éxito:] Tu personaje recibe una herida importante, moviéndose 1 nivel en la escala de daño.
+
+\item[Fallo:] Tu personaje muere.
+
+\end{description}
+
+\minisec{Armas de tipo A o "artillería"}
+
+Las armas de tipo A usan las mismas reglas que las de tipo B, con la salvedad de que pueden también dañar
+vehículos y estructuras como edificios y puentes. Aquí estamos hablando de cañones y explosivos.
 
 
+\begin{table}[ht]
+\centering
+\begin{tabular}{lccccl}
+\toprule
+Tipo de daño  & Éxito & Fracaso \\\midrule\midrule
+E             &  -    & -1 verde \\\midrule
+D             &  -    & -1 rojo\\\midrule
+C             & -1 rojo  & Herido  \\\midrule
+B             & Herido & Muerte \\\midrule
+A             & Herido & Muerte \\\midrule
+\bottomrule
+\end{tabular}
+\caption{Resumen de tirada de daño}
+\end{table}
 % \subsection{The damage roll}
 % \begin{itemize}
 % \item Test your Health against the damage rank of the weapon that hit you.
@@ -239,17 +320,9 @@ Los personajes mueven por el siguiente orden de prioridad.
 % \item The damage rank of most missile weapons is a fixed number.
 % \item The effects depend on the nature of the weapon and your roll.\end{itemize}
 % \begin{description}
-% \item [{Non-Lethal~Weapons:}] These are those weapons which cannot normally
-% kill an adult in a novel or story. In real life, it's perfectly possible
-% to kill somebody with a cane or by stoning them, but it is stories,
-% films and comics that we are trying to simulate; not real life. 
 
-% \begin{description}
-% \item [{Success:}] If your character has passed the Health check he is
-% uninjured. He was tough enough and there's nothing to worry about. 
-% \item [{Fail:}] If your character has failed the Health check you will
-% receive a bruise. Each bruise gives you a malus of ­ 1 for all your
-% actions. 
+
+
 
 % \begin{quote}
 % \emph{For example:} you are involved in a fight with a band of bullies.
@@ -270,25 +343,8 @@ Los personajes mueven por el siguiente orden de prioridad.
 % }. In fact, most may only cause embarrassment. We are speaking of such
 % terrible instruments as cakes, splashing of water and such. 
 
-% \begin{description}
-% \item [{Success:}] If your character has passed the Health check he is
-% uninjured. He was tough enough and there's nothing to worry about. 
-% \item [{Fail:}] If your character has failed the Health check you will
-% receive a bruise. Each bruise gives you a malus of -1 for all your
-% actions. However, unlike the case of non-lethal weapons, all the \emph{damage}
-% that toy weapons cause is \emph{healed} right after the end of the
-% fight. Remember to record toy weapons damage separately.
-% \item [{Fumble:}] Your character is so embarrassed that he will not be
-% able to act for one turn, and may be either crying as a baby or shouting
-% ferocious, angry threats.
-% \item [{Toy~Weapons~vs~Lethal~Weapons:}] If any lethal or extremely
-% lethal weapon is used in the action, toy weapons cease to cause any
-% harm at all. When you see a shotgun nobody cares about being hit by
-% a cake. 
-% \end{description}
-% \item [{Lethal~Weapons:}] Weapons that can kill somebody in a story, though
-% most times the afflicted character survives. We are speaking of knives,
-% the teeth of a strong dog and very small pistols such as a derringer. 
+
+% 
 
 % \begin{description}
 % \item [{Spectacular~Success:}] Luckily, the attack was too weak and your
@@ -319,85 +375,72 @@ Los personajes mueven por el siguiente orden de prioridad.
 % \end{description}
 
 \begin{table}[ht]
-\begin{tabular}{cccc}
+\begin{tabular}{lccccl}
 \toprule
-Arma&Tipo&Daño&Alcance\\\midrule\midrule
-Palo o Bastón&No letal&FUE&-\\\midrule
-Piedra o Ladrillo&No letal&FUE -1&Corto\\\midrule
-Cuchillo&Letal&FUE&-\\\midrule
-Cuchillo (Lanzado)&Letal&FUE - 1&Corto\\\midrule
-Espada&Extremo&FUE&-\\\midrule
+Arma               & Daño       & \# Salud  & Alcance   & Munición  & Notas             \\\midrule\midrule
+Humano desarmado   & D          & FUE       & -         &           &                   \\\midrule
+Palo o Bastón      & D          & FUE +1    & E         &           &                   \\\midrule
+Piedra o Ladrillo  & D          & FUE +2    & D         &           &                   \\\midrule
+Gran roca          & C          & FUE +3    & -         &           & \#+3              \\\midrule
+Cuchillo           & C          & FUE +1    & E         &           &                   \\\midrule
+Espada             & B          & FUE +3    & E         &           &                   \\\midrule
+Ilo utala          & C          & FUE +4    & E         &           & Arma nativa, 2 manos       \\\midrule
+Lanza              & B          & FUE +2    & D         &           &                    \\\midrule
+Derringer          & C          & 13        & D         & 1         & \#+1              \\\midrule
+Revólver           & C          & 15        & C         & 6         &                   \\\midrule
+Escopeta           & B          & 18        & C         & 2         & \#-1              \\\midrule
+Rifle              & B          & 16        & B         & 1 ó 6     &                   \\\midrule
+Carabina           & C          & 15        & B         & 1 ó 6     &                    \\\midrule
+Cerbatana          & E          & 9         & D         & 1         & Puede llevar veneno \\\midrule
+Tirachinas         & E          & 10        & D         & 1         &                   \\\midrule
+Tarta de Crema     & E          & 16        & E         &           &                   \\\midrule
+Tomates            & E          & 12        & E         &           & \\\midrule
+Periódico enrrollado & E        & FUE       & -         &           & \\\midrule
 \bottomrule
 \end{tabular}
 \caption{Armas}
 \end{table}
 
-% \subsubsection{\hfill{}Weapons (and other sources of damage)\hfill{} \label{sub:Weapons Table}}
+\begin{table}[ht]
+\begin{tabular}{lccl}
+\toprule
+Descripción     & Daño & \# Salud & Notas         \\\midrule\midrule
+Perro mediano   & D    & 10       &               \\\midrule
+Lobo            & C    & 10       &               \\\midrule
+Wawa akesi      & C    & 12       & Felino nativo \\\midrule 
+pipi suli       & D    & 9        & Mosquito gigante \\\midrule
+\end{tabular} 
+\caption{Daño de algunos animales}
+\end{table}
+
+% Alcance 
+% E: Corto, -1 al daño si se lanza, 
+% D corto, 
+% C normal, 
+% B largo, 
+% A extremadamente largo
+
+% Daño 
+% E: Juguete, 
+% D No letal, 
+% C letal, 
+% B extremo, 
+% A destructivo
+
+\begin{table}[ht]
+\begin{tabular}{lccl}
+\toprule
+Descripción     & Daño & \# Salud       & Notas         \\\midrule\midrule
+Caída           & C    & 2 por metro    &               \\\midrule
+Fuego pequeño   & C    & 13             &               \\\midrule
+Fuego grande    & B    & 13             & Por minuto de exposición \\\midrule
+Atropello       & B    & 13             &               \\\midrule
+Accidente de bicicleta & D  & 12        &               \\\midrule
+\end{tabular} 
+\caption{Otras fuentes de daño}
+\end{table}
 
 
-% Animal & Non-lethal & STR & -\tabularnewline
-% \midrule 
-% Animal (dangerous) & Lethal & STR & -\tabularnewline
-% \midrule 
-
-% \midrule 
-% Giant mosquito bite & Non-lethal & 9 & -\tabularnewline
-% \midrule 
-% Knuckle-duster & Non-lethal & STR +2 & -\tabularnewline
-% \midrule 
-% Stone or brick & Non-lethal & STR -1 & Short\tabularnewline
-% \midrule 
-% Large rock  & Lethal & STR -1 & Extreme short\tabularnewline
-% \midrule 
-% Knife & Lethal & STR +1 & -\tabularnewline
-% \midrule 
-% Knife (thrown) & Lethal & STR  & Short\tabularnewline
-% \midrule 
-% Sword  & Extreme & STR +1 & -\tabularnewline
-% \midrule 
-% Derringer & Lethal & 13 & Short\tabularnewline
-% \midrule 
-% Revolver & Extreme & 15 & Short\tabularnewline
-% \midrule 
-% Rifle & Extreme & 15 & Normal\tabularnewline
-% \midrule 
-% Shotgun & Extreme & 18 & Short\tabularnewline
-% \midrule 
-% Blowpipe%
-% \footnote{Blowpipes may use poisoned darts and any successful hit will deliver
-% the poison. For more details see Section \vref{sec:Poison}.%
-% } & Toy & 9 & Short\tabularnewline
-% \midrule 
-% Fall & Lethal & 2 per 3 feet & -\tabularnewline
-% \midrule 
-% Small fire & Lethal & 13 & -\tabularnewline
-% \midrule 
-% Large fire & Extreme & 13 & -\tabularnewline
-% \midrule 
-% Run over by carriage & Lethal & 13 & -\tabularnewline
-% \midrule 
-% Fallen debris%
-% \footnote{Fallen debris can be dodged, beating a TN of 11.%
-% } & Lethal & 12 & -\tabularnewline
-% \midrule 
-% Falling off a bike & Non-lethal & 12 & -\tabularnewline
-% \midrule 
-% Falling while running & Non-lethal & 9 & -\tabularnewline
-% \midrule 
-% Slingshot%
-% \footnote{Lethal for small animals; starving kids use them for hunting rats,
-% sparrows and such.%
-% } & Toy & 10 & Short\tabularnewline
-% \midrule 
-% Cake & Toy & 15 & Extreme short-range\tabularnewline
-% \midrule 
-% Bucket of water & Toy & 12 & Extreme short-range\tabularnewline
-% \midrule 
-% Thrown tomatoes, etc. & Toy & 10 & Short\tabularnewline
-% \midrule 
-% Rolled newspaper & Toy & STR & -\tabularnewline
-% \end{longtable}
-% \par\end{center}
 
 
 % \subsubsection{Special weapons}
